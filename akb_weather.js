@@ -1,10 +1,10 @@
 const axios = require('axios');
 const { Configuration, OpenAIApi } = require("openai");
 
-const openWeatherMapApiKey = '04a1c2c151c4a8aa2b81306bfadd13df';
-const openAiApiKey = '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';
-const twilioAccountSid = 'ACca4f4761c0abed27237855081e8e957f';
-const twilioAuthToken = '40e0af57252bf7fd0f1f62449c5d59a6';
+const openWeatherMapApiKey = 'your api key';
+const openAiApiKey = 'your api key';
+const twilioAccountSid = 'your acct';
+const twilioAuthToken = 'your token';
 
 const config = new Configuration({
     apiKey: openAiApiKey,
