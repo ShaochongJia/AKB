@@ -31,7 +31,7 @@ const generateCaringMessage = async (weatherDescription) => {
 };
 
 const sendCaringMessage = async (message, toPhoneNumber) => {
-    const fromPhoneNumber = '+19108983524';
+    const fromPhoneNumber = 'your-number';
     const messageResponse = await client.messages.create({
         body: message,
         from: fromPhoneNumber,
@@ -49,7 +49,7 @@ const runPrompt = async () => {
     const caringMessage = await generateCaringMessage(weatherDescription);
 
     // Send the caring message to a friend's phone number
-    const messageSid = await sendCaringMessage(caringMessage, '+13107295697');
+    const messageSid = await sendCaringMessage(caringMessage, 'your-number');
     console.log(`Message sent with SID: ${messageSid}`);
 };
 
